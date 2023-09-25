@@ -41,7 +41,7 @@ body {
 header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     padding: 10px;
-    min-width: 450px;
+    min-width: 430;
     
 }
 header > h1 {
