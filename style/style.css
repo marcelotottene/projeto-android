@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@import url('http://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url(../fonte/idroid.otf) format('opentype');
+    font-weight: normal;
+ 
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*
+Importante
+*/
+:root {
+
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'android', cursive;
+
+}
+/*
+:root serve como configuração global da página.
+'--' os dois traços indicam variavel
+*/
+body {
+    background-color: var(--cor0);
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    padding: 10px;
+    
+}
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 3.5em;
+    font-weight: normal;
+    color: white;
+    text-shadow: 3px 3px 8px rgb(0, 0, 0, 281);
+}
+header > p {
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrão);
+    font-size: 1em;
+    font-weight: normal;
+    text-shadow: 3px 3px 8px rgb(0, 0, 0, 181);
+    padding: 20px;
+}
+header > nav {
+    padding: 10px 10px 0px 7px;
+}
+header a{
+    text-decoration: none;
+    padding: 7px;
+    color: var(--cor0);
+    font-weight: bolder;
+}
+header a:hover{
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 281);
+}
+main{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+main img{
+    width: 100%;
+}
+article{
+    margin: auto;
+    background-color: white;
+    min-width: 500px;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 300);
+}
+article >  h1 {
+    font-family: var(--fonte-android);
+    font-size: 1.7em;
+    font-weight: normal;
+    text-shadow: 3px 3px 10px rgb(0, 0, 0, 600);
+    text-align: justify;
+    color: var(--cor0);
+    padding: 10px;
+}
+article div#video{
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 0px -20px;
+    padding: 20px;
+    padding-bottom: 50.8%;
+    position:relative ;
+}
+article div#video > iframe{
+    position:absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+article > h2 {
+   font-family: var(--fonte-android);
+   font-size: 1.4em;
+   font-weight: normal;
+   color: var(--cor0);
+   background-image: linear-gradient(to right, var(--cor3), transparent);
+   text-indent: 5px;
+   text-align: justify;
+   padding: 3px;
+   border-radius: 5px 0px 0px 5px;
+}
+article > p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 10px;
+}
+
+article picture.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+article a {
+    text-decoration: none;
+    color: var(--cor5);
+    font-size: 1.1em;
+    font-weight: lighter;
+    
+}
+article a:hover {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 10);
+
+}
+article a.externo::after {
+    content: '\1F517';
+}
+
+strong{
+    color: var(--cor5);
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 10);
+}
+aside {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 10px;
+   
+}
+aside > h1 {
+  font-family: var(--fonte-padrão);
+  text-indent: 5px;
+  padding:5px;
+  background-color: var(--cor4);
+  color: var(--cor0);
+  border-radius: 10px 10px 0px 0px;
+  margin: -10px -10px 0px -10px;
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+    padding: 5px;
+    text-indent: 0px;
+}
+footer {
+    text-align: center;
+    background-color: var(--cor5);
+    color: var(--cor0);
+
+}
+footer  a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bolder;
+    
+}
+footer a:hover{
+    color: var(--cor2);
+}
