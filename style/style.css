@@ -41,7 +41,7 @@ body {
 header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     padding: 10px;
-    min-width: 520px;
+    min-width: 450px;
     
 }
 header > h1 {
@@ -88,7 +88,7 @@ main img{
 article{
     margin: auto;
     background-color: white;
-    min-width: 500px;
+    min-width: 430px;
     max-width: 1000px;
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
